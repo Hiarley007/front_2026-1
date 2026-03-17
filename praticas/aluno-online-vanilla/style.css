@@ -83,8 +83,12 @@ section p{
 }
 
 /* DESKTOP */
+<<<<<<< HEAD
 @media (width<=768px){
 
+=======
+@media (width >= 768px){
+>>>>>>> 7da6925195cff1f09097d32d8747b4c05e7cf2b6
   body{
     display:flex;
     min-height:100vh;
