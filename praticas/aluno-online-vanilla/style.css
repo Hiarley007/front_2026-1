@@ -83,8 +83,7 @@ section p{
 }
 
 /* DESKTOP */
-@media (min-width:768px){
-
+@media (width >= 768px){
   body{
     display:flex;
     min-height:100vh;
@@ -137,7 +136,7 @@ section p{
     grid-template-columns:1fr 1fr; /* duas colunas */
     gap:30px;
     max-width:900px;
-    margin: 20px 150px 20px 150px;
+    margin: 20px 150px;
   }
 
   /* header ocupa linha inteira */
