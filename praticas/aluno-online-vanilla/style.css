@@ -12,7 +12,7 @@
 
   --cor-fundo:#e6f0ff;
   --cor-texto:#0f172a;
-  --cor-card:#ffffff;
+  --cor-card:#fff;
   --cor-menu:#e6f0ff;
 }
 
@@ -79,13 +79,10 @@ section p{
   padding:10px;
   font-size:15px;
   border-radius: 8px;
-  border-bottom: 2px solid rgb(214, 214, 214);
+  border-bottom: 2px solid #d9d9d9;
 }
 
-/* ===================== */
 /* DESKTOP */
-/* ===================== */
-
 @media (min-width:768px){
 
   body{
@@ -99,12 +96,11 @@ section p{
     width:310px;
     background:var(--cor-menu);
     padding:25px;
-    display: inline-block;
-    margin-bottom: 30px; 
+    margin-bottom: 25px; 
   }
   
   aside header{
-    margin-top: 25px;
+    margin-top: 20px;
     margin-bottom: 50px;
   }
 
@@ -141,10 +137,7 @@ section p{
     grid-template-columns:1fr 1fr; /* duas colunas */
     gap:30px;
     max-width:900px;
-    margin-top: 20px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 20px;
+    margin: 20px 150px 20px 150px;
   }
 
   /* header ocupa linha inteira */
