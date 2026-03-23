@@ -28,7 +28,7 @@ senha.addEventListener('input', function(){
     }
 })
 
-botao.addEventListener('click', function(e){
+botao.addEventListener('click', function(){
     
     emailErro.textContent = '';
     senhaErro.textContent = '';
