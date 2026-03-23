@@ -153,7 +153,6 @@ label {
 /* Efeito ao focar */
 .input-01:focus {
   border-color: black;
-  box-shadow: 0 0 3px rgba(36, 36, 61, 0.3);
 }
 
 /* Mensagens de erro */
@@ -315,7 +314,7 @@ label {
 }
 
 /* Inputs */
-.input_01 {
+.input-01 {
   width: 100%;
   padding: 10px;
   border-radius: 6px;
@@ -325,7 +324,7 @@ label {
 }
 
 /* Efeito ao focar */
-.input_01:focus {
+.input-01:focus {
   border-color: black;
   box-shadow: 0 0 3px rgb(48, 49, 76, 0.3);
 }
