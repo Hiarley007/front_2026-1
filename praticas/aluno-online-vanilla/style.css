@@ -1,87 +1,87 @@
-
 /* RESET */
 * {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
+/* Definição de Cores e fonte */
+:root {
   font-family: Arial, Helvetica, sans-serif;
-  font-size:1rem;
-  font-weight:400;
+  font-size: 1rem;
+  font-weight: 400;
 
-  --cor-fundo:#fff;
-  --cor-texto:#0f172a;
-  --cor-card:#fff;
-  --cor-menu:#bec4cc;
+  --cor-fundo: #fff;
+  --cor-texto: #0f172a;
+  --cor-card: #fff;
+  --cor-menu: #bec4cc;
 }
 
 /* MOBILE (padrão) */
-body{
-  background:var(--cor-fundo);
-  color:var(--cor-texto);
+body {
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
   height: 100vh;
 }
 
 /* Menu - Desktop */
-aside{
-  display:none;
+aside {
+  display: none;
 }
 
 /* Conteúdo */
-main{
-  padding:20px;
+main {
+  padding: 20px;
 }
 
 /* Header */
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:20px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
   border-bottom: 2px solid black;
 }
 
 /* H1 do Cabeçalho */
-header h1{
-  font-size:26px;
+header h1 {
+  font-size: 26px;
   margin-bottom: 8px;
 }
 
 /* Img do Cabeçalho */
-header img{
-  width:45px;
-  height:45px;
+header img {
+  width: 45px;
+  height: 45px;
   margin-bottom: 8px;
 }
 
 /* Subtítulo */
-main h2{
-  margin-bottom:20px;
-  font-size:20px;
+main h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
 /* Cards */
-section{
-  background:var(--cor-card);
-  border-radius:8px;
-  border:1px solid #d0d0d0;
-  margin-bottom:20px;
+section {
+  background: var(--cor-card);
+  border-radius: 8px;
+  border: 1px solid #d0d0d0;
+  margin-bottom: 20px;
 }
 
 /* Título Card */
-section h3{
-  background:#d9d9d9;
-  padding:10px;
-  border-radius:8px 8px 0 0;
-  font-size:18px;
+section h3 {
+  background: #d9d9d9;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  font-size: 18px;
 }
 
 /* Texto */
-section p{
-  padding:10px;
-  font-size:15px;
+section p {
+  padding: 10px;
+  font-size: 15px;
   border-radius: 8px;
   border-bottom: 2px solid #d9d9d9;
 }
@@ -150,7 +150,7 @@ label {
   transition: 0.2s;
 }
 
-/* Efeito ao focar */
+/* Efeito ao focar no campo */
 .input-01:focus {
   border-color: black;
 }
@@ -183,177 +183,174 @@ label {
 }
 
 /* DESKTOP */
-@media (width >= 768px){
-  body{
-    display:flex;
-    min-height:100vh;
+@media (width >= 768px) {
+  body {
+    display: flex;
+    min-height: 100vh;
   }
 
   /* menu lateral */
-  aside{
-    display:block;
-    width:310px;
-    background:var(--cor-menu);
-    padding:25px;
-    margin-bottom: 25px; 
+  aside {
+    display: block;
+    width: 310px;
+    background: var(--cor-menu);
+    padding: 25px;
+    margin-bottom: 25px;
     height: 100vh;
   }
-  
-  aside header{
+
+  aside header {
     margin-top: 20px;
     margin-bottom: 50px;
   }
 
   aside img {
-    width:45px;
-    height:45px;
+    width: 45px;
+    height: 45px;
   }
 
-  aside h2{ 
-    margin-left:15px;    
-    font-size:25px;
+  aside h2 {
+    margin-left: 15px;
+    font-size: 25px;
   }
 
-  
-  nav ul{
-    list-style:none;
-    padding-left:1px;
+  nav ul {
+    list-style: none;
+    padding-left: 1px;
   }
 
-  nav li{
-    margin-bottom:30px;
-    cursor:pointer;
+  nav li {
+    margin-bottom: 30px;
+    cursor: pointer;
   }
 
-  nav li:hover{
-    font-weight:bold;
+  nav li:hover {
+    font-weight: bold;
   }
 
-  /* conteúdo */
-  main{
-    flex:1;
-    padding:30px;
-    display:grid;
-    grid-template-columns:1fr 1fr; /* duas colunas */
-    gap:30px;
-    max-width:900px;
+  /* Conteúdo */
+  main {
+    flex: 1;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* duas colunas */
+    gap: 30px;
+    max-width: 900px;
     margin: 20px 150px;
   }
 
-  /* header ocupa linha inteira */
-  header{
+  /* Header ocupa linha inteira */
+  header {
     border-bottom: 2px solid black;
-    grid-column:1 / -1;
+    grid-column: 1 / -1;
   }
 
-  /* subtítulo ocupa linha inteira */
-  main h2{
-    grid-column:1 / -1;
+  /* Subtítulo ocupa linha inteira */
+  main h2 {
+    grid-column: 1 / -1;
   }
 
-  header h1{
-    font-size:32px;
+  header h1 {
+    font-size: 32px;
   }
 
-  header img{
-    width:50px;
-    height:50px;
+  header img {
+    width: 50px;
+    height: 50px;
   }
 
   /* Fundo da página */
-.body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+  .body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
-/* Card principal */
-.geral {
-  background: #fff;
-  width: 100%;
-  max-width: 400px;
-  padding: 20px;
-  border-radius: 10px;
-  border: 3px solid black;
-  text-align: center;
-  display: block;
-}
+  /* Card principal */
+  .geral {
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid black;
+    text-align: center;
+    display: block;
+  }
 
-/* Header */
-.header {
-  flex-direction: column;
-  margin-bottom: 50px;
-  border-bottom: transparent;
-}
+  /* Header */
+  .header {
+    flex-direction: column;
+    margin-bottom: 50px;
+    border-bottom: transparent;
+  }
 
-.img {
-  width: 60px;
-  margin-bottom: 10px;
-}
+  .img {
+    width: 60px;
+    margin-bottom: 10px;
+  }
 
-.titulo {
-  font-size: 24px;
-  color: #111827;
-}
+  .titulo {
+    font-size: 24px;
+    color: #111827;
+  }
 
-/* Formulário */
-form {
-  text-align: left;
-}
+  /* Formulário */
+  form {
+    text-align: left;
+  }
 
-label {
-  display: block;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  color: #374151;
-  font-size: 14px;
-  font-weight: bold;
-}
+  label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: bold;
+  }
 
-/* Inputs */
-.input-01 {
-  width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #d1d5db;
-  outline: none;
-  transition: 0.2s;
-}
+  /* Inputs */
+  .input-01 {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    outline: none;
+    transition: 0.2s;
+  }
 
-/* Efeito ao focar */
-.input-01:focus {
-  border-color: black;
-}
+  /* Efeito ao focar */
+  .input-01:focus {
+    border-color: black;
+  }
 
-/* Mensagens de erro */
-.text {
-  font-size: 12px;
-  color: red;
-  margin-top: 3px;
-  font-weight: bold;
-}
+  /* Mensagens de erro */
+  .text {
+    font-size: 12px;
+    color: red;
+    margin-top: 3px;
+    font-weight: bold;
+  }
 
-/* Botão */
-.button {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 12px;
-  background-color: black;
-  border: none;
-  border-radius: 50px;
-  font-size: 16px;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.3s;
-}
+  /* Botão */
+  .button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
-/* Hover botão */
-.button:hover {
-  background-color: #54565b;
+  /* Hover botão */
+  .button:hover {
+    background-color: #54565b;
+  }
 }
-
-}
-
