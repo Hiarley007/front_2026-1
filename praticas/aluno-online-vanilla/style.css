@@ -326,7 +326,6 @@ label {
 /* Efeito ao focar */
 .input-01:focus {
   border-color: black;
-  box-shadow: 0 0 3px rgb(48, 49, 76, 0.3);
 }
 
 /* Mensagens de erro */
