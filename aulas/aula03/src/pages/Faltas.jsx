@@ -7,8 +7,8 @@ function Faltas () {
             <Sidebar/>
             <main>
                 <Topbar/>
-                <h2>MInhas Faltas</h2>
-                <section></section>
+                <h2>Minhas Faltas</h2>
+                
             </main>
         </>
 
