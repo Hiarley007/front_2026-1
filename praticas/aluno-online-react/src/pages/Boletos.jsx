@@ -13,7 +13,7 @@ function Boletos() {
           <img src={avatar} alt="imagem do avatar" className="w-10 h-10" />
         </header>
         <h2 className="text-2xl font-semibold px-10 p-0 md:px-8 p-8">
-          Histórico de Pagamentos
+          Histórico de Pagamentos 
         </h2>
 
         <section className="p-8">

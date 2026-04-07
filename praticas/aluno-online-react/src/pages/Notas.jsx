@@ -14,7 +14,7 @@ function Notas() {
         </header>
         <h2 className="text-2xl font-semibold px-10 p-0 md:px-8 p-8">
           Histórico de faltas por Semestre
-        </h2>
+        </h2> 
 
         <section className="p-8">
           <h3 className="bg-gray-300 text-gray-800 text-lg text-center font-bold p-2 rounded-t-lg overflow-hidden">

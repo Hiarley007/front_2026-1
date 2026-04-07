@@ -5,7 +5,7 @@ function Menu() {
         <ul>
 
           <li className="px-3 py-2 rounded-lg hover:bg-gray-100 cursor-pointer font-medium">
-            Dashboard
+            Dashboard 
           </li>
 
           <li className="px-3 py-2 rounded-lg hover:bg-gray-100 cursor-pointer">

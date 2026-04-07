@@ -11,7 +11,7 @@ function Main() {
           Bem - vindo ao Portal do Aluno
         </h2>
 
-        <Card/>
+        <Card/> 
       </main>
     </>
   );

@@ -19,7 +19,7 @@ function Boletos() {
         <section className="p-2 md:p-8">
           <table className="w-full border-1 border-solid- border-gray-300">
             <thead className="bg-gray-300 p-8">
-              <tr className="bg-gray-300 text-gray-800">
+              <tr className="bg-gray-300 text-gray-800"> 
                 <th className="p-3 font-semibold">Tipo de Requerimentos</th>
                 <th className="p-3 font-semibold">Data de Solicitação</th>
                 <th className="p-3 font-semibold">Situação</th>

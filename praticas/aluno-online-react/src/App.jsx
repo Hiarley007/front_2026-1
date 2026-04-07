@@ -8,7 +8,7 @@ import Notas from "./pages/Notas";
 
 
 function App(){
-  return (
+  return ( 
     <>
     <Faltas />
     </>
