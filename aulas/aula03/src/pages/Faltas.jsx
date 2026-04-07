@@ -1,17 +1,18 @@
+import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
+import Tabela from "../components/Tabela";
 import Topbar from "../components/Topbar";
 
-function Faltas () {
-    return (
-        <>
-            <Sidebar/>
-            <main>
-                <Topbar/>
-                <h2>Minhas Faltas</h2>
-                
-            </main>
-        </>
-
-    )
+function Faltas() {
+  return (
+    <>
+      <Sidebar />
+      <Main titulo="Minhas Faltas" subtitulo="Histórico de Faltas por Semestre">
+          <Tabela titulo="2026.1"/>
+          <Tabela titulo="2025.2"/>
+          <Tabela titulo="2025.1"/>
+      </Main>
+    </>
+  );
 }
 export default Faltas;
