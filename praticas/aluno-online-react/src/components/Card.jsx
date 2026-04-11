@@ -11,7 +11,7 @@ function Card() {
               Inscrições para Projeto de Extensão
             </li>
             <li className="border-b border-gray-200 py-2">
-              Eleição para representante de Turma 
+              Eleição para representante de Turma
             </li>
             <li></li>
           </ul>

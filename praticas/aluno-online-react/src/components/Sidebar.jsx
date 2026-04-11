@@ -13,7 +13,7 @@ function Sidebar() {
         <div className="flex-1 overflow-y-auto">
           <Menu />
         </div>
-      </aside> 
+      </aside>
     </>
   );
 }

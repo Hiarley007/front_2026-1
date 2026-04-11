@@ -13,7 +13,7 @@ function Boletos() {
           <img src={avatar} alt="imagem do avatar" className="w-10 h-10" />
         </header>
         <h2 className="text-2xl font-semibold px-10 p-0 md:px-8 p-8">
-          Histórico de Pagamentos 
+          Histórico de Pagamentos
         </h2>
 
         <section className="p-8">
@@ -27,69 +27,147 @@ function Boletos() {
             </thead>
             <tbody className="text-gray-900 border-l border-gray-300">
               <tr className="border-t border-gray-300 bg-gray-100 text-green-600">
-                <td className="p-3 text-center  border-l border-gray-300">19/01/2026</td>
-                <td className="p-3 text-center  border-l border-gray-300">500,00</td>
-                <td className="p-3 text-center  border-l border-gray-300">Pago</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  19/01/2026
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  500,00
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  Pago
+                </td>
               </tr>
               <tr className="border-t border-gray-300 text-red-600">
-                <td className="p-3 text-center  border-l border-gray-300">19/02/2026</td>
-                <td className="p-3 text-center  border-l border-gray-300">500,00</td>
-                <td className="p-3 text-center  border-l border-gray-300">Em atraso</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  19/02/2026
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  500,00
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  Em atraso
+                </td>
               </tr>
               <tr className="border-t border-gray-300 bg-gray-100 text-green-600">
-                <td className="p-3 text-center  border-l border-gray-300">19/03/2026</td>
-                <td className="p-3 text-center  border-l border-gray-300">500,00</td>
-                <td className="p-3 text-center  border-l border-gray-300">Pago</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  19/03/2026
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  500,00
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  Pago
+                </td>
               </tr>
               <tr className="border-t border-gray-300 text-green-600">
-                <td className="p-3 text-center  border-l border-gray-300">19/04/2026</td>
-                <td className="p-3 text-center  border-l border-gray-300">500,00</td>
-                <td className="p-3 text-center  border-l border-gray-300">Pago</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  19/04/2026
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  500,00
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  Pago
+                </td>
               </tr>
               <tr className="border-t border-gray-300 bg-gray-100 text-green-600">
-                <td className="p-3 text-center  border-l border-gray-300">19/05/2026</td>
-                <td className="p-3 text-center  border-l border-gray-300">500,00</td>
-                <td className="p-3 text-center  border-l border-gray-300">Pago</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  19/05/2026
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  500,00
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  Pago
+                </td>
               </tr>
               <tr className="border-t border-gray-300">
-                <td className="p-3 text-center  border-l border-gray-300">19/06/2026</td>
-                <td className="p-3 text-center  border-l border-gray-300">500,00</td>
-                <td className="p-3 text-center  border-l border-gray-300">A pagar</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  19/06/2026
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  500,00
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  A pagar
+                </td>
               </tr>
               <tr className="border-t border-gray-300 bg-gray-100">
-                <td className="p-3 text-center  border-l border-gray-300">19/07/2026</td>
-                <td className="p-3 text-center  border-l border-gray-300">500,00</td>
-                <td className="p-3 text-center  border-l border-gray-300">A pagar</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  19/07/2026
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  500,00
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  A pagar
+                </td>
               </tr>
               <tr className="border-t border-gray-300">
-                <td className="p-3 text-center  border-l border-gray-300">19/08/2026</td>
-                <td className="p-3 text-center  border-l border-gray-300">500,00</td>
-                <td className="p-3 text-center  border-l border-gray-300">A pagar</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  19/08/2026
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  500,00
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  A pagar
+                </td>
               </tr>
               <tr className="border-t border-gray-300 bg-gray-100">
-                <td className="p-3 text-center  border-l border-gray-300">19/09/2026</td>
-                <td className="p-3 text-center  border-l border-gray-300">500,00</td>
-                <td className="p-3 text-center  border-l border-gray-300">A pagar</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  19/09/2026
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  500,00
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  A pagar
+                </td>
               </tr>
               <tr className="border-t border-gray-300">
-                <td className="p-3 text-center  border-l border-gray-300">19/10/2026</td>
-                <td className="p-3 text-center  border-l border-gray-300">500,00</td>
-                <td className="p-3 text-center  border-l border-gray-300">A pagar</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  19/10/2026
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  500,00
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  A pagar
+                </td>
               </tr>
               <tr className="border-t border-gray-300 bg-gray-100">
-                <td className="p-3 text-center  border-l border-gray-300">19/11/2026</td>
-                <td className="p-3 text-center  border-l border-gray-300">500,00</td>
-                <td className="p-3 text-center  border-l border-gray-300">A pagar</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  19/11/2026
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  500,00
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  A pagar
+                </td>
               </tr>
               <tr className="border-t border-gray-300">
-                <td className="p-3 text-center  border-l border-gray-300">19/12/2026</td>
-                <td className="p-3 text-center  border-l border-gray-300">500,00</td>
-                <td className="p-3 text-center  border-l border-gray-300">A pagar</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  19/12/2026
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  500,00
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  A pagar
+                </td>
               </tr>
               <tr className="border-t border-gray-300 bg-gray-100">
-                <td className="p-3 text-center  border-l border-gray-300">19/01/2027</td>
-                <td className="p-3 text-center  border-l border-gray-300">500,00</td>
-                <td className="p-3 text-center  border-l border-gray-300">A pagar</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  19/01/2027
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  500,00
+                </td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  A pagar
+                </td>
               </tr>
             </tbody>
           </table>

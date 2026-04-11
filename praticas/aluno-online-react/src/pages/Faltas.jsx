@@ -58,7 +58,7 @@ function Faltas() {
               </tr>
             </tbody>
           </table>
-        </section> 
+        </section>
 
         <section className="p-8">
           <h3 className="bg-gray-300 text-gray-800 text-lg text-center font-bold p-2 rounded-t-lg overflow-hidden">
@@ -67,7 +67,7 @@ function Faltas() {
           <table className="w-full border-1 border-solid- border-gray-300 rounded-t-lg">
             <thead className="bg-gray-300 p-8">
               <tr className="bg-gray-300 text-gray-800">
-                <th className="p-2">Disciplina</th> 
+                <th className="p-2">Disciplina</th>
                 <th className="p-2">Total de Faltas</th>
                 <th className="p-2">% de Presença</th>
               </tr>

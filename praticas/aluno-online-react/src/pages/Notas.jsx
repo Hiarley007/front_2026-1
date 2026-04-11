@@ -14,7 +14,7 @@ function Notas() {
         </header>
         <h2 className="text-2xl font-semibold px-10 p-0 md:px-8 p-8">
           Histórico de faltas por Semestre
-        </h2> 
+        </h2>
 
         <section className="p-8">
           <h3 className="bg-gray-300 text-gray-800 text-lg text-center font-bold p-2 rounded-t-lg overflow-hidden">
@@ -38,7 +38,9 @@ function Notas() {
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
-                <td className="p-3 text-center  border-l border-gray-300">SR</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  SR
+                </td>
               </tr>
               <tr className="bg-white border-t border-gray-300 text-gray-800">
                 <td className="p-3 text-center  border-l border-gray-300">
@@ -47,7 +49,9 @@ function Notas() {
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
-                <td className="p-3 text-center  border-l border-gray-300">SR</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  SR
+                </td>
               </tr>
               <tr className="bg-white border-t  border-gray-300 text-gray-800">
                 <td className="p-3 text-center  border-l border-gray-300">
@@ -56,13 +60,15 @@ function Notas() {
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
-                <td className="p-3 text-center  border-l border-gray-300">SR</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  SR
+                </td>
               </tr>
             </tbody>
           </table>
-          </section>
+        </section>
 
-          <section className="p-8">
+        <section className="p-8">
           <h3 className="bg-gray-300 text-gray-800 text-lg text-center font-bold p-2 rounded-t-lg overflow-hidden">
             1° SEMESTRE - 2026
           </h3>
@@ -84,7 +90,9 @@ function Notas() {
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
-                <td className="p-3 text-center  border-l border-gray-300">SR</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  SR
+                </td>
               </tr>
               <tr className="bg-white border-t border-gray-300 text-gray-800">
                 <td className="p-3 text-center  border-l border-gray-300">
@@ -93,7 +101,9 @@ function Notas() {
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
-                <td className="p-3 text-center  border-l border-gray-300">SR</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  SR
+                </td>
               </tr>
               <tr className="bg-white border-t  border-gray-300 text-gray-800">
                 <td className="p-3 text-center  border-l border-gray-300">
@@ -102,7 +112,9 @@ function Notas() {
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
-                <td className="p-3 text-center  border-l border-gray-300">SR</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  SR
+                </td>
               </tr>
             </tbody>
           </table>
@@ -130,7 +142,9 @@ function Notas() {
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
-                <td className="p-3 text-center  border-l border-gray-300">SR</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  SR
+                </td>
               </tr>
               <tr className="bg-white border-t border-gray-300 text-gray-800">
                 <td className="p-3 text-center  border-l border-gray-300">
@@ -139,7 +153,9 @@ function Notas() {
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
-                <td className="p-3 text-center  border-l border-gray-300">SR</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  SR
+                </td>
               </tr>
               <tr className="bg-white border-t  border-gray-300 text-gray-800">
                 <td className="p-3 text-center  border-l border-gray-300">
@@ -148,7 +164,9 @@ function Notas() {
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
                 <td className="p-3 text-center  border-l border-gray-300"> </td>
-                <td className="p-3 text-center  border-l border-gray-300">SR</td>
+                <td className="p-3 text-center  border-l border-gray-300">
+                  SR
+                </td>
               </tr>
             </tbody>
           </table>
