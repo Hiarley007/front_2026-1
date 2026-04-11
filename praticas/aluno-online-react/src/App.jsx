@@ -10,7 +10,7 @@ import Notas from "./pages/Notas";
 function App(){
   return ( 
     <>
-    <Faltas />
+    < Requerimentos />
     </>
   )
 }
