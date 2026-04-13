@@ -1,18 +1,17 @@
 import Card from "./Card";
 import Topbar from "./Topbar";
 
-function Main(props) {
+function Main() {
   return (
     <>
-      <main className="flex-1 max-w-7xl mx-auto">
-        <Topbar titulo={props.titulo} />
+      <main className="flex-1 mx-auto pr-6 pl-6">
+        <Topbar />
 
         <h2 className="text-lg font-semibold px-4 md:px-10 p-8">
-          {props.subtitulo}
+          Bem - vindo ao Portal do Aluno
         </h2>
-        <section>
-          {props.children}
-        </section>
+
+        <Card />
       </main>
     </>
   );

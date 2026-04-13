@@ -1,17 +1,42 @@
+import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
+import Tabela from "../components/Tabela";
 import Topbar from "../components/Topbar";
 
-
 function Notas() {
-    return (
-        <div>
-            <Sidebar/>
-            <main>
-                <Topbar />
-                <h2>Minhas Notas</h2>
-            </main>
-        </div>
-    )
+
+  const colunas = ["Disciplinas", "A1", "A2", "A3", "Menção"];
+
+  const notas = [
+    [
+      ["BI e DataWarehouse", "", "", "", "SR "],
+      ["Construção de Frontend", "", "", "", "SR "],
+      ["Manutenção de Softawre e DevOps", "", "", "", "SR "],
+    ],
+
+    [
+      ["Estrutura de Dados", "5.5", "5.5", "", "SR "],
+      ["Construção de Backend", "0.0", "6.0", "4.0", "SR "],
+      ["Gerenciamento de Projetos", "8.0", "9.0", "4.0", "SR "],
+    ],
+
+    [
+      
+        ["Estrutura de Dados", "5.5", "5.5", "", "SR "],
+        ["Construção de Backend", "0.0", "6.0", "4.0", "SR "],
+        ["Gerenciamento de Projetos", "8.0", "9.0", "4.0", "SR "],
+    ],
+  ];
+  return (
+    <>
+      <Sidebar />
+      <Main titulo="Minhas Notas" subtitulo="Histórico de Notas">
+          <Tabela titulo="2026.1" colunas={colunas} dados={notas[0]}/>
+          <Tabela titulo="2025.2" colunas={colunas} dados={notas[1]}/>
+          <Tabela titulo="2025.1" colunas={colunas} dados={notas[2]}/>
+      </Main>
+    </>
+  );
 }
 
-export default Notas
+export default Notas;
