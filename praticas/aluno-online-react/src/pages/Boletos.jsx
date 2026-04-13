@@ -33,7 +33,6 @@ function Boletos() {
       <Main
         titulo="Meus Boletos"
         subtitulo="Histórico de Pagamentos"
-        className="flex-1 h-screen md:overflow-hidden"
       >
         <Tabela colunas={colunas} dados={boletos[0]} />
       </Main>

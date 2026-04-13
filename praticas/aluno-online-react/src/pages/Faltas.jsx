@@ -28,7 +28,7 @@ function Notas() {
   return (
     <>
       <Sidebar />
-      <Main titulo="Minhas Notas" subtitulo="Histórico de Notas">
+      <Main titulo="Minhas Faltas" subtitulo="Histórico de Faltas">
         <Tabela
           titulo="1° Semestre - 2026"
           colunas={colunas}
