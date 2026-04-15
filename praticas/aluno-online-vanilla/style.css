@@ -1,0 +1,374 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definição de Cores e fonte */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+
+  --cor-fundo: #fff;
+  --cor-texto: #0f172a;
+  --cor-card: #fff;
+  --cor-menu: #bec4cc;
+}
+
+/* MOBILE (padrão) */
+body {
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  height: 100vh;
+}
+
+/* Menu - Desktop */
+aside {
+  display: none;
+}
+
+/* Conteúdo */
+main {
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+/* H1 do Cabeçalho */
+header h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+/* Img do Cabeçalho */
+header img {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 8px;
+}
+
+/* Subtítulo */
+main h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Cards */
+section {
+  background: var(--cor-card);
+  border-radius: 8px;
+  border: 1px solid #d0d0d0;
+  margin-bottom: 20px;
+}
+
+/* Título Card */
+section h3 {
+  background: #d9d9d9;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  font-size: 18px;
+}
+
+/* Texto */
+section p {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+/* Fundo da Página - Login */
+.tudo {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card Principal */
+.geral {
+  background: #fff;
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+/* Header */
+.cabecalho {
+  flex-direction: column;
+  margin-bottom: 25px;
+  border-bottom: transparent;
+}
+
+/* Imagem do Cabeçalho */
+.imagem {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* Título do Cabeçalho */
+.titulo {
+  font-size: 24px;
+  color: #111827;
+}
+
+/* Formulário */
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Inputs */
+.input-01 {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: 0.2s;
+}
+
+/* Efeito ao focar no campo */
+.input-01:focus {
+  border-color: black;
+}
+
+i {
+  position: relative;
+  margin-left: -38px; /* puxa o ícone pra dentro do input */
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+
+/* Mensagens de erro */
+.texto {
+  font-size: 12px;
+  color: red;
+  margin-top: 3px;
+  font-weight: bold;
+}
+
+/* Botão */
+.botao {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: black;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover botão */
+.botao:hover {
+  background-color: #676970;
+}
+
+/* DESKTOP */
+@media (width >= 768px) {
+  body {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* menu lateral */
+  aside {
+    display: block;
+    width: 310px;
+    background: var(--cor-menu);
+    padding: 25px;
+    margin-bottom: 25px;
+    height: 100vh;
+  }
+
+  aside header {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  aside img {
+    width: 45px;
+    height: 45px;
+  }
+
+  aside h2 {
+    margin-left: 15px;
+    font-size: 25px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding-left: 1px;
+  }
+
+  nav li {
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+
+  nav li:hover {
+    font-weight: bold;
+  }
+
+  /* Conteúdo */
+  main {
+    flex: 1;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* duas colunas */
+    gap: 30px;
+    max-width: 900px;
+    margin: 20px 150px;
+  }
+
+  /* Header ocupa linha inteira */
+  header {
+    border-bottom: 2px solid black;
+    grid-column: 1 / -1;
+  }
+
+  /* Subtítulo ocupa linha inteira */
+  main h2 {
+    grid-column: 1 / -1;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  header img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Fundo da página */
+  .body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Card principal */
+  .geral {
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid black;
+    text-align: center;
+    display: block;
+  }
+
+  /* Header */
+  .header {
+    flex-direction: column;
+    margin-bottom: 50px;
+    border-bottom: transparent;
+  }
+
+  .img {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+
+  .titulo {
+    font-size: 24px;
+    color: #111827;
+  }
+
+  /* Formulário */
+  form {
+    text-align: left;
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* Inputs */
+  .input-01 {
+    width: 100%;
+    padding: 12px;
+    padding-top: 14px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    outline: none;
+    transition: 0.2s;
+  }
+
+  /* Efeito ao focar */
+  .input-01:focus {
+    border-color: black;
+  }
+
+  i {
+  position: relative;
+  margin-left: -38px; /* puxa o ícone pra dentro do input */
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+  }
+
+  /* Mensagens de erro */
+  .text {
+    font-size: 12px;
+    color: red;
+    margin-top: 3px;
+    font-weight: bold;
+  }
+
+  /* Botão */
+  .button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  /* Hover botão */
+  .button:hover {
+    background-color: #54565b;
+  }
+
