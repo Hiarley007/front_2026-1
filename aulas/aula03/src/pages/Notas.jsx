@@ -3,8 +3,7 @@ import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
 import Topbar from "../components/Topbar";
 
-function Notas() {
-
+function Notas(props) {
   const colunas = ["Disciplinas", "A1", "A2", "A3", "Menção"];
 
   const notas = [
@@ -21,19 +20,30 @@ function Notas() {
     ],
 
     [
-      
-        ["Estrutura de Dados", "5.5", "5.5", "", "SR "],
-        ["Construção de Backend", "0.0", "6.0", "4.0", "SR "],
-        ["Gerenciamento de Projetos", "8.0", "9.0", "4.0", "SR "],
+      ["Estrutura de Dados", "5.5", "5.5", "", "SR "],
+      ["Construção de Backend", "0.0", "6.0", "4.0", "SR "],
+      ["Gerenciamento de Projetos", "8.0", "9.0", "4.0", "SR "],
     ],
   ];
   return (
     <>
-      <Sidebar />
+      <Sidebar navegaPara={props.navegaPara}/>
       <Main titulo="Minhas Notas" subtitulo="Histórico de Notas">
-          <Tabela titulo="2026.1" colunas={colunas} dados={notas[0]}/>
-          <Tabela titulo="2025.2" colunas={colunas} dados={notas[1]}/>
-          <Tabela titulo="2025.1" colunas={colunas} dados={notas[2]}/>
+        <Tabela
+          titulo="1° Semestre - 2026"
+          colunas={colunas}
+          dados={notas[0]}
+        />
+        <Tabela
+          titulo="2° Semestre - 2025"
+          colunas={colunas}
+          dados={notas[1]}
+        />
+        <Tabela
+          titulo="1° Semestre - 2025"
+          colunas={colunas}
+          dados={notas[2]}
+        />
       </Main>
     </>
   );
