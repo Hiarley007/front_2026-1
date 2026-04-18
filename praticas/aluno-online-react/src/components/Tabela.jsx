@@ -3,7 +3,7 @@ function Tabela(props) {
     <>
     <section className="p-4">
       {props.titulo && (
-        <h2 className="text-2xl font-semibold p-2 bg-gray-300 text-center">
+        <h2 className="text-2xl font-semibold p-2 bg-gray-300 text-center rounded-t-lg border-b border-gray-100">
           {props.titulo}
         </h2>
       )}
@@ -12,7 +12,7 @@ function Tabela(props) {
           <thead className="bg-gray-300 text-gray-800 p-3">
             <tr className="border border-gray-300">
               {props.colunas.map((item, index) => (
-                <th key={index} className="p-3 font-semibold text-center first:rounded-tl-lg last:rounded-tr-lg">
+                <th key={index} className="p-3 font-semibold text-center">
                   {item}
                 </th>
               ))}
