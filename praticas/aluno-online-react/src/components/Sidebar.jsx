@@ -1,7 +1,7 @@
 import logo from "../assets/learn.svg";
 import Menu from "./Menu";
 
-function Sidebar() {
+function Sidebar(props) {
   return (
     <>
       <aside className=" hidden md:flex flex-col w-100 min-h-screen bg-gray-300 border-r border-gray-300 md:overflow-hidden">
@@ -11,7 +11,7 @@ function Sidebar() {
         </header>
 
         <div className="flex-1 overflow-y-auto">
-          <Menu />
+          <Menu navegaPara={props.navegaPara}/>
         </div>
       </aside>
     </>
