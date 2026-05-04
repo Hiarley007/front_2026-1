@@ -2,7 +2,7 @@ import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
 
-function Requerimentos() {
+function Requerimentos(props) {
   const colunas = ["Tipo de Requerimento", "Data de Solicitação", "Situação"];
 
   const informacoes = [
@@ -21,7 +21,7 @@ function Requerimentos() {
 
   return (
     <>
-      <Sidebar />
+      <Sidebar navegaPara={props.navegaPara}/>
       <Main
         titulo="Meus Requerimentos"
         subtitulo="Faça solitações online para Scretária"
