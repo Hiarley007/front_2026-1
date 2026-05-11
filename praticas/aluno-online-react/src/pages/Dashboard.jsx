@@ -2,7 +2,7 @@ import Card from "../components/Card";
 import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
 
-function Dashboard(props) {
+function Dashboard() {
   const avisos = [
     "Eleiçõa para representante de Turma",
     "Inscrição para Projeto de Extensão",
@@ -23,7 +23,7 @@ function Dashboard(props) {
 
   return (
     <>
-      <Sidebar navegaPara={props.navegaPara}/>
+    
       <Main titulo="Olá, Aluno!" subtitulo="Bem - vindo ao Portal do Aluno">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:p-8">
           <Card titulo="Mural de Avisos" itens={avisos} />
