@@ -6,19 +6,24 @@ import Home from "./pages/Home";
 import Erro404 from "./pages/Erro404";
 import Layout from "./layout/Layout";
 import Login from "./pages/Login";
+import { useAuth } from "./contexts/AuthContext";
 
 function App() {
+  const {logado} = useAuth();
+
   return (
     <Routes>
-      <Route path ="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="perfil/:id" element={<Perfil />} />
-        <Route path="settings" element={<Settings />} />
-        <Route path="*" element={<Erro404 />} />
-      </Route>
-
-      <Route path="/login" element={<Login />} />
+      {logado ? (
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="perfil/:id" element={<Perfil />} />
+          <Route path="settings" element={<Settings />} />
+        </Route>
+      ) : (
+        <Route path="/login" element={<Login />} />
+      )}
+      <Route path="*" element={<Erro404 />} />
     </Routes>
   );
 }

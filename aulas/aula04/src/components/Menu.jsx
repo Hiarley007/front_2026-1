@@ -1,12 +1,21 @@
 import './Menu.css'
-import {Link, NavLink} from 'react-router'
+import {NavLink, useNavigate} from 'react-router'
+import { useAuth } from '../contexts/AuthContext';
+
 
 function Menu() {
   const usuarioID = 0;
+  const {logout, usuario} = useAuth();
+  const navigate = useNavigate();
 
-
+  const handleSair = (e) => {
+    e.preventDefault();
+    logout();
+    navigate("/login")
+  }
   return (
     <nav>
+      <h1>{usuario.nome}</h1>
       <ul>
         <li>
           <NavLink to="/">Home</NavLink>
@@ -21,7 +30,7 @@ function Menu() {
            <NavLink to="/settings">Configurações</NavLink>
         </li>
         <li>
-           <Link to="/login">Sair</Link>
+           <a href='#' onClick={handleSair}>Sair</a>
         </li>
       </ul>
     </nav>
