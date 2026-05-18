@@ -11,6 +11,7 @@ import Erro404 from "./pages/Erro404";
 function App () {
   return (
     <Routes>
+       <Route path="/login" element={<Login />} />
      <Route path="/" element={<Layout />}>
         <Route index element={<Dashboard />}/>
         <Route path="notas" element={<Notas />}/>
@@ -20,7 +21,6 @@ function App () {
      </Route>
         
     <Route path="*" element={<Erro404 />}/>
-    <Route path="/login" element={<Login />} />
     </Routes>
   ) 
 }
