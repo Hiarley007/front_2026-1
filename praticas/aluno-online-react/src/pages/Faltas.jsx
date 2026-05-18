@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
 import Topbar from "../components/Topbar";
 
-function Faltas(props) {
+function Faltas() {
   const colunas = ["Disciplinas", "Total de Faltas", "% de Presença"];
 
   const faltas = [
@@ -27,7 +27,6 @@ function Faltas(props) {
   ];
   return (
     <>
-      <Sidebar navegaPara={props.navegaPara}/>
       <Main titulo="Minhas Faltas" subtitulo="Histórico de Faltas">
         <Tabela
           titulo="1° Semestre - 2026"

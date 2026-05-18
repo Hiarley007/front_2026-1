@@ -1,30 +1,32 @@
-function Menu({ navegaPara }) {
+import {Link, NavLink} from 'react-router'
+
+function Menu() {
   return (
     <>
       <nav className="max-h-screen bg-gray-300 border-r border-gray-200 p-8">
         <ul>
           <li className="px-3 py-2 rounded-lg hover:bg-gray-100 cursor-pointer font-medium">
-            <a href="#" onClick={() => navegaPara(1)}>Dashboard</a>
+            <NavLink to="/">Dashboard</NavLink>
           </li>
 
           <li className="px-3 py-2 rounded-lg hover:bg-gray-100 cursor-pointer">
-            <a href="#" onClick={() => navegaPara(2)}>Notas</a>
+            <NavLink to="/notas">Notas</NavLink>
           </li>
 
           <li className="px-3 py-2 rounded-lg hover:bg-gray-100 cursor-pointer">
-            <a href="#" onClick={() => navegaPara(3)}>Faltas</a>
+            <NavLink to="/faltas">Faltas</NavLink>
           </li>
 
           <li className="px-3 py-2 rounded-lg hover:bg-gray-100 cursor-pointer">
-            <a href="#" onClick={() => navegaPara(4)}>Boletos</a>
+           <NavLink to="/Boletos">Boletos</NavLink>
           </li>
 
           <li className="px-3 py-2 rounded-lg hover:bg-gray-100 cursor-pointer">
-            <a href="#" onClick={() => navegaPara(5)}>Requerimentos</a>
+            <NavLink to="/Requerimentos">Requerimentos</NavLink>
           </li>
 
           <li className="px-3 py-2 rounded-lg hover:bg-red-100 text-red-600 cursor-pointer mt-6">
-            <a href="#" onClick={() => navegaPara(0)}>Sair</a>
+            <Link to="/login">Sair</Link>
           </li>
         </ul>
       </nav>
@@ -33,3 +35,6 @@ function Menu({ navegaPara }) {
 }
 
 export default Menu;
+
+
+ 
