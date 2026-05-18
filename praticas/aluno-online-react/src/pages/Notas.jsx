@@ -14,7 +14,7 @@ function Notas() {
     ],
 
     [
-      ["Estrutura de Dados", "5.5", "5.5", "", "SR "],
+      ["Estrutura de Dados", "5.5", "5.5", "", "SR "], 
       ["Construção de Backend", "0.0", "6.0", "4.0", "SR "],
       ["Gerenciamento de Projetos", "8.0", "9.0", "4.0", "SR "],
     ],
@@ -27,6 +27,7 @@ function Notas() {
   ];
   return (
     <>
+      
       <Main titulo="Minhas Notas" subtitulo="Histórico de Notas">
         <Tabela
           titulo="1° Semestre - 2026"
