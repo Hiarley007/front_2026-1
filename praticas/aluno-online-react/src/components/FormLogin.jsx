@@ -3,7 +3,8 @@ import { useNavigate } from "react-router";
 import InputMatricula from "./InputMatricula";
 import InputSenha from "./InputSenha";
 import InputSubmit from "./InputSubmit";
-import { useAuth } from "../context/AuthContext";
+import useAuth from "../hooks/useAuth";
+
 
 function FormLogin() {
   const { login } = useAuth();

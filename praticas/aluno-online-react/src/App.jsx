@@ -5,9 +5,9 @@ import Notas from "./pages/Notas";
 import Boletos from "./pages/Boletos";
 import Requerimentos from "./pages/Requerimentos";
 import Login from "./pages/Login";
-import { useAuth } from "./context/AuthContext";
 import Erro404 from "./pages/Erro404";
 import Layout from "./layout/Layout";
+import useAuth from "./hooks/useAuth";
 
 function App() {
   const {logado} = useAuth();
