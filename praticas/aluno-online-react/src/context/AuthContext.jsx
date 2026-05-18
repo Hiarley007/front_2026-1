@@ -23,7 +23,7 @@ function AuthProvider({ children }) {
   );
 }
 
-function useAuth() {
+function useAuth() { 
   return useContext(AuthContext);
 }
 

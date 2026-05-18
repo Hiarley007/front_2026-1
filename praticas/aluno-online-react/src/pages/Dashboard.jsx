@@ -2,7 +2,7 @@ import Card from "../components/Card";
 import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
 
-function Dashboard() {
+function Dashboard() { 
   const avisos = [
     "Eleiçõa para representante de Turma",
     "Inscrição para Projeto de Extensão",

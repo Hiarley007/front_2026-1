@@ -2,7 +2,7 @@ import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
 
-function Boletos() {
+function Boletos() { 
   const colunas = ["Data", "Valor R$", "Situação"];
 
   const boletos = [
