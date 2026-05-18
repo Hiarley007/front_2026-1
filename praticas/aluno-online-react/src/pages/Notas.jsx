@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
 import Topbar from "../components/Topbar";
 
-function Notas(props) {
+function Notas() {
   const colunas = ["Disciplinas", "A1", "A2", "A3", "Menção"];
 
   const notas = [
@@ -27,7 +27,7 @@ function Notas(props) {
   ];
   return (
     <>
-      <Sidebar navegaPara={props.navegaPara}/>
+      
       <Main titulo="Minhas Notas" subtitulo="Histórico de Notas">
         <Tabela
           titulo="1° Semestre - 2026"
