@@ -6,7 +6,7 @@ function AuthProvider({ children }) {
   const [usuario, setUsuario] = useState({});
   const [logado, setLogado] = useState(false);
 
-  const login = (dados) => {
+  const login = () => {
     setUsuario({ nome: "Hiarley" });
     setLogado(true);
   };
