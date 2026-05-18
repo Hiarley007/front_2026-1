@@ -33,7 +33,7 @@ function Faltas() {
           colunas={colunas}
           dados={faltas[0]}
         />
-        <Tabela
+        <Tabela 
           titulo="2° Semestre - 2025"
           colunas={colunas}
           dados={faltas[1]}

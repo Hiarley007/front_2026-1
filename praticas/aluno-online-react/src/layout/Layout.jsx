@@ -5,11 +5,14 @@ import Sidebar from "../components/Sidebar";
 function Layout () {
     return (
         <>
-        <Sidebar/>
+    
+            <Sidebar />
         
-            <Outlet />
+    
+            <Outlet/>
+       
         </>
     )
 }
 
-export default Layout;
+export default Layout; 

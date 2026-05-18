@@ -22,7 +22,7 @@ function Requerimentos() {
   return (
     <>
       <Main
-        titulo="Meus Requerimentos"
+        titulo="Meus Requerimentos" 
         subtitulo="Faça solitações online para Scretária"
         className="flex-1 h-screen md:overflow-hidden"
       >
