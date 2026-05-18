@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router"; 
 import InputMatricula from "./InputMatricula";
 import InputSenha from "./InputSenha";
 import InputSubmit from "./InputSubmit";
@@ -36,8 +36,8 @@ function FormLogin() {
     }
 
     if (validacao) {
-      login({ username: matricula, password: senha });
-      navigate("/");
+      login({ username: matricula, password: senha }); // usa os valores do form
+      navigate("/"); // redireciona após login
     }
   };
 

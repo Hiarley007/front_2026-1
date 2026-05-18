@@ -27,6 +27,7 @@ function Notas() {
   ];
   return (
     <>
+      
       <Main titulo="Minhas Notas" subtitulo="Histórico de Notas">
         <Tabela
           titulo="1° Semestre - 2026"

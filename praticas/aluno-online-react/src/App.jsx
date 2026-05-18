@@ -11,8 +11,9 @@ import Layout from "./layout/Layout";
 
 function App() {
   const {logado} = useAuth();
+
   return (
-  <Routes>
+    <Routes>
       {logado ? (
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
@@ -24,7 +25,7 @@ function App() {
       ) : (
         <Route path="/login" element={<Login />} />
       )}
-      <Route path="*" element={<Erro404 />} /> 
+      <Route path="*" element={<Erro404 />} />
     </Routes>
   );
 }
