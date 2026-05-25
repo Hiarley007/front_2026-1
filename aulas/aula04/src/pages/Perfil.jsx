@@ -27,7 +27,7 @@ function Perfil() {
     },
 
     nascimento: {
-      validate: (value) => Date.parse(`${value} 00:00:00 UTC`) < Date.now() || "Data de Nascimento Inválida",
+      validate: (value) => Date.parse(`${value} 00:00:00 UTC`) <= new Date() || "Data de Nascimento Inválida",
       },
 
     telefone: {
@@ -35,7 +35,8 @@ function Perfil() {
       pattern: {
           value: /^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$/,
           message: "Telefone é um número"
-      }    
+      }
+    
   }
 }
 
