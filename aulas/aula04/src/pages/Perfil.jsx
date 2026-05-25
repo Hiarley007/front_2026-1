@@ -22,20 +22,22 @@ function Perfil() {
       minLength: { value: 3, message: "Nome deve ter mais de 2 caracteres" },
     },
 
-    email: {
-      min: { value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, 
-      message: "Telefone é um número" },
+    email: { 
+      required: "E-mail é Obrigatŕio"
     },
 
     nascimento: {
-      validate: (value) => Date.parse(value) < Date.now() || "Data de Nascimento Inválida",
+      validate: (value) => Date.parse(`${value} 00:00:00 UTC`) < Date.now() || "Data de Nascimento Inválida",
       },
 
     telefone: {
-      min: { value: /^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$/, 
-      message: "Telefone é um número" },
-    },
-  };
+      min: {value: 0, message:"Telefone é um número"},
+      pattern: {
+          value: /^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$/,
+          message: "Telefone é um número"
+      }    
+  }
+}
 
   return (
     <>
@@ -59,7 +61,7 @@ function Perfil() {
             id="email"
             {...register("email", validadores.email)}
           />
-          {errors?.email && <p>{errors.email.message}</p>}
+          {errors?.email && <p>{errors.email.required}</p>}
         </div>
 
         <div>
