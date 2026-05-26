@@ -1,18 +1,10 @@
 import { useState } from "react";
-<<<<<<< HEAD
-import { useAuth } from "../contexts/AuthContext"; // ajuste o caminho
-import InputMatricula from "./InputMatricula";
-import InputSenha from "./InputSenha";
-import InputSubmit from "./InputSubmit";
-import { useNavigate } from "react-router";
-=======
 import { useNavigate } from "react-router"; 
 import InputMatricula from "./InputMatricula";
 import InputSenha from "./InputSenha";
 import InputSubmit from "./InputSubmit";
 import useAuth from "../hooks/useAuth";
 
->>>>>>> 5d0d3e984a52e345e8fd3b40a39e7ccdd24766bf
 
 function FormLogin() {
   const { login } = useAuth();

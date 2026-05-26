@@ -1,9 +1,11 @@
+import { Outlet, useNavigate } from "react-router";
 import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
 
 function Requerimentos() {
   const colunas = ["Tipo de Requerimento", "Data de Solicitação", "Situação"];
+  const navigate = useNavigate();
 
   const informacoes = [
     [
@@ -22,11 +24,20 @@ function Requerimentos() {
   return (
     <>
       <Main
-        titulo="Meus Requerimentos" 
+        titulo="Meus Requerimentos"
         subtitulo="Faça solitações online para Scretária"
         className="flex-1 h-screen md:overflow-hidden"
       >
         <Tabela colunas={colunas} dados={informacoes[0]} />
+
+        <button
+          onClick={() => navigate("/novo")}
+          className="block ml-auto bg-gray-800 hover:bg-gray-700 active:bg-gray-900 text-white text-sm font-medium px-4 py-2 mr-4 rounded-lg transition-colors"
+        >
+          Novo Requerimento
+        </button>
+
+        <Outlet />
       </Main>
     </>
   );
