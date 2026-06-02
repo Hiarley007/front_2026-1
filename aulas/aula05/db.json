@@ -1,4 +1,29 @@
 {
-  "produtos": [],
+  "produtos": [
+    {
+      "nome": "158",
+      "preco": "2",
+      "unidade": "2",
+      "id": "pGnm2otcr4A"
+    },
+    {
+      "nome": "Morango",
+      "preco": "16",
+      "unidade": "Bandeja",
+      "id": "Bg_n-oAzjzc"
+    },
+    {
+      "nome": "Banana Prata",
+      "preco": "6",
+      "unidade": "Kg",
+      "id": "OUHv3SreQ50"
+    },
+    {
+      "nome": "1234",
+      "preco": "7532",
+      "unidade": "74",
+      "id": "OCZQ-Z51m9c"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
