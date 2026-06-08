@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router";
-
+import { criar } from "../services/requerimentosService";
 
 function RequerimentoForm() {
   const [enviado, setEnviado] = useState(false);
@@ -14,8 +14,20 @@ function RequerimentoForm() {
     formState: { errors },
   } = useForm();
 
-  const onSalvar = (formulario) => {
-    console.log("chegou aqui", formulario);
+  const tiposRequerimento = {
+    revisao: "Revisão de Mensão",
+    abono: "Dispensa de Disciplina",
+    cancelamento: "Trancamento de Matrícula",
+    transferencia: "Renovação de Matrícula",
+  };
+
+  const onSalvar = async (formulario) => {
+    await criar({
+      tipo: tiposRequerimento[formulario.requerimento],
+      dataSolicitacao: formulario.dataRequerimento,
+      situacao: "Em análise",
+      descricao: formulario.descricao,
+    });
     reset();
     setEnviado(true);
     setTimeout(() => {
@@ -27,30 +39,27 @@ function RequerimentoForm() {
   const hoje = new Date().toISOString().split("T")[0];
 
   const validadores = {
-
-  descricao: {
-    required: "Descrição é obrigatória",
-    minLength: { value: 10, message: "Mínimo de 10 caracteres" },
-  },
-  selecao: {
-    required: "Selecione um tipo de Requerimento",
-  },
-  dataRequerimento: {
-    required: "Data do Requerimento é obrigatória",
-    validate: (value) => {
-      const dataSelecionada = Date.parse(`${value} 00:00:00 UTC`);
-      const dataHoje = Date.parse(`${hoje} 00:00:00 UTC`);
-
-      if (dataSelecionada !== dataHoje) return "A data deve ser a de hoje";
-
-      return true;
+    descricao: {
+      required: "Descrição é obrigatória",
+      minLength: { value: 10, message: "Mínimo de 10 caracteres" },
     },
-  },
-};
+    selecao: {
+      required: "Selecione um tipo de Requerimento",
+    },
+    dataRequerimento: {
+      required: "Data do Requerimento é obrigatória",
+      validate: (value) => {
+        const dataSelecionada = Date.parse(`${value} 00:00:00 UTC`);
+        const dataHoje = Date.parse(`${hoje} 00:00:00 UTC`);
+        if (dataSelecionada !== dataHoje) return "A data deve ser a de hoje";
+        return true;
+      },
+    },
+  };
 
   return (
-    <main className="min-h-screen w-full px-8 py-10">
-      <header className="mb-8">
+    <div className="px-3">
+      <header className="mb-6">
         <h2 className="text-2xl font-semibold text-gray-800">
           Novo Requerimento
         </h2>
@@ -69,8 +78,7 @@ function RequerimentoForm() {
         <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <fieldset className="flex flex-col gap-2 border-none p-0 m-0">
             <label className="text-sm font-medium text-gray-700">
-              Tipo de Requerimento
-              <span className="text-red-400">*</span>
+              Tipo de Requerimento <span className="text-red-400">*</span>
             </label>
 
             <select
@@ -124,7 +132,7 @@ function RequerimentoForm() {
 
           <textarea
             id="descricao"
-            rows={10}
+            rows={6}
             placeholder="Descreva com mais detalhes a solicitação ao seu Requerimento"
             className="w-full bg-gray-100 border border-gray-300 rounded-lg px-3 py-3 text-sm text-gray-700 resize-none focus:outline-none focus:ring-2 focus:ring-gray-400 placeholder-gray-400"
             {...register("descricao", validadores.descricao)}
@@ -148,13 +156,13 @@ function RequerimentoForm() {
           <button
             type="button"
             onClick={() => navigate("/requerimentos")}
-            className="w-full md:w-auto md:px-8 bg-gray-800 hover:bg-gray-700 active:bg-gray-900 text-white text-sm font-medium py-3 rounded-lg transition-colors"
+            className="w-full md:w-auto md:px-8 bg-gray-200 hover:bg-gray-300 active:bg-gray-400 text-gray-800 text-sm font-medium py-3 rounded-lg transition-colors"
           >
             Cancelar
           </button>
         </footer>
       </form>
-    </main>
+    </div>
   );
 }
 
