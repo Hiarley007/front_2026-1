@@ -1,21 +1,41 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from "react-router";
-import { criar } from "../services/protudoService";
+import { Link, useNavigate, useParams } from "react-router";
+import { atualizar, criar, obter } from "../services/protudoService";
 
 function Formulario() {
   const [erro, setErro] = useState();
+  const { id } = useParams();
   const navigate = useNavigate();
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   const salvar = async (dados) => {
     try {
-        await criar(dados);
+      if (id) {
+        await atualizar({id, ...dados});
+      } else {
+         await criar(dados);
+      }
         navigate("/produtos");
     } catch (error) {
         setErro(error.message);
     }
   }
+
+  useEffect (() => {
+    if (!id) {
+      return;
+    } 
+
+
+    const disparar =  async () => {
+      const resposta = await obter({id});
+      reset(resposta);
+      //setProduto(resposta);
+    }
+
+    disparar();
+  }, []);
 
   return (
     <>
@@ -30,13 +50,13 @@ function Formulario() {
         /> 
          
         <input 
-        type="number" 
+        type="text" 
         placeholder="Preço 0.00" 
         {...register("preco")} 
         />
 
         <input 
-        type="text" 
+        type="text"
         placeholder="Unidade" 
         {...register("unidade")} 
         />

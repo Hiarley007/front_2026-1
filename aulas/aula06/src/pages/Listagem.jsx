@@ -1,10 +1,18 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
-import { listar } from "../services/protudoService";
+import { listar, remover } from "../services/protudoService";
+
+
 
 function Listagem() {
   const navigate = useNavigate();
   const [dados, setDados] = useState([]);
+
+  const trataRemover = async (produto) => {
+     await remover(produto);
+     setDados(dados.filter((item) => item.id != produto.id));
+     // navigate("/produtos");
+  }
 
   useEffect(() => {
     const carregar = async () => {
@@ -35,7 +43,7 @@ function Listagem() {
               <td>{item.unidade}</td>
               <td>
                 <Link to={`/produtos/editar/${item.id}`}>Editar</Link>|
-                <Link to="/produtos">Remover</Link>
+                <Link to="/produtos" onClick={() => trataRemover(item)}>Remover</Link>
               </td>
             </tr>
           ))}

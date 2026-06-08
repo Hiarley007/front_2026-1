@@ -1,28 +1,34 @@
 {
   "produtos": [
     {
-      "nome": "158",
-      "preco": "2",
-      "unidade": "2",
-      "id": "pGnm2otcr4A"
-    },
-    {
-      "nome": "Morango",
-      "preco": "16",
-      "unidade": "Bandeja",
-      "id": "Bg_n-oAzjzc"
-    },
-    {
-      "nome": "Banana Prata",
+      "id": "gyW84quMzyU",
+      "nome": "Fita",
       "preco": "6",
+      "unidade": "Kg"
+    },
+    {
+      "id": "pbS-29xjEtE",
+      "nome": "Abacate Verde",
+      "preco": "8,66",
+      "unidade": "Kg"
+    },
+    {
+      "nome": "Laranja",
+      "preco": "5,49",
       "unidade": "Kg",
-      "id": "OUHv3SreQ50"
+      "id": "gAokT9ecWP0"
+    },
+    {
+      "nome": "Tomate",
+      "preco": "5,45 ",
+      "unidade": "",
+      "id": "9VPSmYH7w3Q"
     },
     {
       "nome": "1234",
-      "preco": "7532",
-      "unidade": "74",
-      "id": "OCZQ-Z51m9c"
+      "preco": "6",
+      "unidade": "Bandeja",
+      "id": "MoblB5go-P4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
