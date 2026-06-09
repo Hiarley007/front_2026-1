@@ -58,6 +58,21 @@
       "situacao": "Em análise",
       "descricao": "Estou cansado dessa matéria chata",
       "id": "-gRdS6wLvCg"
+    },
+    {
+      "tipo": "Revisão de Mensão",
+      "dataSolicitacao": "2026-06-08",
+      "situacao": "Em análise",
+      "descricao": "asdfghjklçxghj",
+      "id": "VhJeBkN_N4A"
+    }
+  ],
+
+  "usuarios": [
+    { 
+      "id": 1,
+      "email": "hiarley@hotmail.com",
+      "senha": 123456
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -25,7 +25,7 @@ function Formulario() {
   useEffect (() => {
     if (!id) {
       return;
-    } 
+    }  
 
 
     const disparar =  async () => {
