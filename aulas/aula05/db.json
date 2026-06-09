@@ -29,6 +29,35 @@
       "preco": "6",
       "unidade": "Bandeja",
       "id": "MoblB5go-P4"
+    },
+    {
+      "requerimento": "abono",
+      "dataRequerimento": "2026-06-08",
+      "descricao": "asdfghjklç~wertyuiop´",
+      "id": "wls5thknvhU"
+    }
+  ],
+  "requerimentos": [
+    {
+      "tipo": "Dispensa de Disciplina",
+      "dataSolicitacao": "2026-06-08",
+      "situacao": "Em análise",
+      "descricao": "qwertyuiopasdfghjklzxcvbnm,",
+      "id": "6V8QnZYWBPc"
+    },
+    {
+      "tipo": "Dispensa de Disciplina",
+      "dataSolicitacao": "2026-06-08",
+      "situacao": "Em análise",
+      "descricao": "qwertyuiopasdfghjkl",
+      "id": "yOODa0ha1zI"
+    },
+    {
+      "tipo": "Dispensa de Disciplina",
+      "dataSolicitacao": "2026-06-08",
+      "situacao": "Em análise",
+      "descricao": "Estou cansado dessa matéria chata",
+      "id": "-gRdS6wLvCg"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
