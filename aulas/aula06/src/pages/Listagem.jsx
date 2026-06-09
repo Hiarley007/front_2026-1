@@ -14,7 +14,7 @@ function Listagem() {
      setDados(dados.filter((item) => item.id != produto.id));
      // navigate("/produtos");
   }
-
+ 
   useEffect(() => {
     const carregar = async () => {
       const resposta = await listar(usuario.token);

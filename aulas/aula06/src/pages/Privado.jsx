@@ -8,4 +8,4 @@ function Privado () {
     </>
 }
 
-export default Privado;
+export default Privado; 

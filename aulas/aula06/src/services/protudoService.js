@@ -37,7 +37,7 @@ async function listar(token) {
       headers: {Authorization: `Beraer ${token}`}
     });
     return await resposta.json();
-  } catch (error) {
+  } catch (error) { 
     return { message: `Deus ruim! ${error.code}-${error.message}` };
   }
 }

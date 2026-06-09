@@ -14,7 +14,7 @@ function Login () {
         await login(dados);
         navigate("/produtos");
         setErro("");
-        } catch (error) {
+        } catch (error) { 
             setErro(error.message)
         }
     }

@@ -69,7 +69,7 @@
   ],
 
   "usuarios": [
-    {
+    { 
       "id": 1,
       "email": "hiarley@hotmail.com",
       "senha": 123456

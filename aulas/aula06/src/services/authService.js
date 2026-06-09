@@ -18,4 +18,4 @@ async function entrar(credenciais) {
   return { token: null, mensagem: "Credenciais inválidas" };
 }
 
-export { entrar };
+export { entrar }; 
