@@ -1,4 +1,4 @@
-function InputMatricula({ matricula, erro, mudaValor }) {
+function InputMatricula({ erro, ...rest }) {
   return (
     <>
       <label htmlFor="matricula" className="mt-5 font-semibold">Matrícula</label>
@@ -7,9 +7,7 @@ function InputMatricula({ matricula, erro, mudaValor }) {
         className="border border-solid border-gray-900 border-2 p-2 rounded-lg"
         type="number"
         id="matricula"
-        name="matricula"
-        value={matricula}
-        onChange={mudaValor}
+        {...rest}
       />
       <p className="text-red-700">{erro}</p>
     </>

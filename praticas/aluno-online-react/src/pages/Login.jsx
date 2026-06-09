@@ -2,6 +2,7 @@ import logo from "../assets/learn.svg";
 import FormLogin from "../components/FormLogin";
 
 function Login() {
+  
   return (
     <main className="flex items-center justify-center min-h-screen w-full">
       <section className="flex flex-col items-center border border-gray-900 border-2 rounded-md p-10">

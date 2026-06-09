@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
-import { Outlet, useNavigate, useLocation } from "react-router";
+import { Outlet, useNavigate, useLocation, Link } from "react-router";
 import { listar } from "../services/requerimentosService";
 import Main from "../components/Main";
 import Tabela from "../components/Tabela";
+import useAuth from '../hooks/useAuth';
 
 function Requerimentos() {
   const navigate = useNavigate();
   const location = useLocation();
   const [dados, setDados] = useState([]);
+   const {usuario} = useAuth();
 
   const colunas = ["Tipo de Requerimento", "Data de Solicitação", "Situação"];
 
@@ -16,7 +18,7 @@ function Requerimentos() {
   useEffect(() => {
     if (exibirTabela) {
       const carregar = async () => {
-        const resposta = await listar();
+        const resposta = await listar(usuario.token);
         setDados(resposta);
       };
       carregar();
@@ -46,6 +48,8 @@ function Requerimentos() {
           >
             Novo Requerimento
           </button>
+
+          
         </>
       ) : (
         <Outlet />

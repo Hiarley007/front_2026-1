@@ -7,30 +7,25 @@ import Requerimentos from "./pages/Requerimentos";
 import Login from "./pages/Login";
 import Erro404 from "./pages/Erro404";
 import Layout from "./layout/Layout";
-import useAuth from "./hooks/useAuth";
 import RequerimentoForm from "./forms/RequerimentoForm";
+import Privado from "./pages/Privado";
 
 function App() {
-  const { logado } = useAuth();
-
   return (
     <Routes>
-      {logado ? (
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Dashboard />} />
-          <Route path="notas" element={<Notas />} />
-          <Route path="faltas" element={<Faltas />} />
-          <Route path="boletos" element={<Boletos />} />
-          <Route path="requerimentos" element={<Requerimentos />}>
-            <Route path="novo" element={<RequerimentoForm />} />
+      <Route path="/login" element={<Login />} />
+      <Route element={<Privado />}>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="notas" element={<Notas />} />
+            <Route path="faltas" element={<Faltas />} />
+            <Route path="boletos" element={<Boletos />} />
+            <Route path="requerimentos" element={<Requerimentos />}>
+              <Route path="novo" element={<RequerimentoForm />} />
+            </Route>
           </Route>
         </Route>
-      ) : (
-        <>
-          <Route path="/login" element={<Login />} />
-          <Route path="*" element={<Navigate to="/login" replace />} />
-        </>
-      )}
+
       <Route path="*" element={<Erro404 />} />
     </Routes>
   );

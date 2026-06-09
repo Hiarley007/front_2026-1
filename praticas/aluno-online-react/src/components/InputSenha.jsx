@@ -1,4 +1,4 @@
-function InputSenha({ senha, erro, mudaValor }) {
+function InputSenha({ erro, ...rest }) {
   return (
     <>
       <label htmlFor="senha" className="mt-5 font-semibold">Senha</label>
@@ -7,9 +7,7 @@ function InputSenha({ senha, erro, mudaValor }) {
         className="border border-solid border-gray-900 border-2 p-2 rounded-lg"
         type="password"
         id="senha"
-        name="senha"
-        value={senha}
-        onChange={mudaValor}
+        {...rest}
       />
       <p className="text-red-700">{erro}</p>
     </>
