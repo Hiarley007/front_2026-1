@@ -1,18 +1,28 @@
 import { createContext, useState } from "react";
+import { entrar } from "../services/authService";
 
 const AuthContext = createContext();
 
 function AuthProvider({ children }) {
   const [usuario, setUsuario] = useState({});
-  const [logado, setLogado] = useState(false);
+  const [logado, setLogado] = useState(!!localStorage.getItem("app.token"));
 
-  const login = () => {
-    setUsuario({ nome: "Hiarley"});
-    setLogado(true);
+  const login = async (dados) => {
+    const { token, mensagem } = await entrar(dados);
+
+    if (token) {
+      setUsuario({ matricula: dados.matricula, token });
+      setLogado(true)
+      localStorage.setItem("app.token", token);
+      return;
+    }
+
+    throw new Error(mensagem);
   };
 
   const logout = () => {
     setUsuario({});
+    localStorage.removeItem("app.token");
     setLogado(false);
   };
 
@@ -22,44 +32,5 @@ function AuthProvider({ children }) {
     </AuthContext.Provider>
   );
 }
-
-
 
 export { AuthContext, AuthProvider };
-
-/* import { createContext, useState } from "react";
-
-const AuthContext = createContext();
-
-function AuthProvider({ children }) {
-  const [usuario, setUsuario] = useState(() => {
-    const saved = localStorage.getItem("usuario");
-    return saved ? JSON.parse(saved) : {};
-  });
-
-  const [logado, setLogado] = useState(() => {
-    return localStorage.getItem("logado") === "true";
-  });
-
-  const login = ({ username }) => {
-    setUsuario({ nome: username });
-    setLogado(true);
-    localStorage.setItem("usuario", JSON.stringify({ nome: username }));
-    localStorage.setItem("logado", "true");
-  };
-
-  const logout = () => {
-    setUsuario({});
-    setLogado(false);
-    localStorage.removeItem("usuario");
-    localStorage.removeItem("logado");
-  };
-
-  return (
-    <AuthContext.Provider value={{ logado, usuario, login, logout }}>
-      {children}
-    </AuthContext.Provider>
-  );
-}
-
-export { AuthContext, AuthProvider }; */
